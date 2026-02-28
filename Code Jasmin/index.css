@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(90deg, #4dc001 0%, #11ff00 30%, #11ff00 70%, #4dc001 100%);
+
+    font-family: Offside, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+
+    overflow: hidden;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.card {
+    background-color: whitesmoke;
+    box-shadow: 0 4px 6px whitesmoke;
+
+    border-radius: 10px;
+
+    padding: 1.5rem;
+
+    width: 90%;
+    max-width: 400px;
+
+    text-align: center;
+}
+
+.hinweis1,
+.hinweis2,
+.hinweis3,
+.hinweis4,
+.einladung {
+    display: none;
+}
+
+input {
+    font-family: Offside, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+
+    margin: 10px auto;
+    padding: 10px;
+
+
+    max-width: 150px;
+    width: 60%;
+
+    text-align: center;
+
+    outline: none;
+    border: solid #11ff00;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: solid #4dc001;
+}
+
+button {
+    font-family: Offside, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+
+    padding: 10px 20px;
+    margin: 10px;
+    width: auto;
+
+    background-color: #11ff00;
+
+    border: solid #11ff00;
+    border-radius: 5px;
+
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: #4dc001;
+    border: solid #4dc001;
+
+    transition: 0.5s ease;
+
+    cursor: pointer;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+    max-width: 400px;
+}
+
+dt {
+    font-weight: bold;
+    grid-column: 1;
+    text-align: right;
+}
+
+dd {
+    margin: 0;
+    margin-left: 10px;
+    grid-column: 2;
+    text-align: left;
+}

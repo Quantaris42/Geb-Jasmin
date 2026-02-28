@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Offside">
+    <title>Code Check</title>
+</head>
+
+<body>
+    <div class="card index card0">
+        <h2>Geburtstag Jasmin</h2>
+        Gib den Code ein: <br>
+        <input type="text" id="codeBox">
+        <button onclick="checkPwd()">Check</button>
+        <br><br>
+        Die magischen Verbindungen erschließen sich dir nicht?<br>
+        <Button onclick="goToCard(1)">1. Hinweis ►</Button>
+    </div>
+
+    <div class="card hinweis1 card1">
+        <h2>Hinweis 1</h2>
+        Jeder der vier Sternenformationen auf der rechten Karte hilft, die gesuchte Zahl auf der linken Karte zu
+        identifizieren.<br>
+        <Button onclick="goToCard(0)">◄ Zurück zur Einagbe</Button>
+        <br><br>
+        Hä? Check ich nicht.<br>
+        <Button onclick="goToCard(2)">2. Hinweis ►</Button>
+    </div>
+
+    <div class="card hinweis2 card2">
+        <h2>Hinweis 2</h2>
+        Der dunkle Stern in den Sternenformationen verrät, wo sich die gesuchte Zahl in Position zu den magischen
+        Gegenständen befinden.<br>
+        <Button onclick="goToCard(0)">◄ Zurück zur Einagbe</Button>
+        <br><br>
+        Ich verstehe nur Bahnhof.<br>
+        <Button onclick="goToCard(3)">3. Hinweis ►</Button>
+    </div>
+
+    <div class="card hinweis3 card3">
+        <h2>Hinweis 3</h2>
+        Zum Beispiel befindet sich die erste gesuchte Zahl rechts vom Zaubertrank.<br>
+        <Button onclick="goToCard(0)">◄ Zurück zur Einagbe</Button>
+        <br><br>
+        Ich bin immernoch planlos.<br>
+        <Button onclick="goToCard(4)">4. Hinweis ►</Button>
+    </div>
+
+    <div class="card hinweis4 card4">
+        <h2>Hinweis 4</h2>
+        Die vierte Sternenformation ist grösser als die anderen drei.<br>
+        <Button onclick="goToCard(0)">◄ Zurück zur Einagbe</Button>
+        <br><br>
+        Ähhh... Und jetzt?<br>
+        <button onclick="goToCard(5)">Deine letzte Hoffnung ►</button>
+    </div>
+
+    <div class="card einladung card5">
+        <h2>Deine letzte Hoffung ist...</h2>
+        ... Jasmin<br>
+        <Button onclick="goToCard(0)">◄ Zurück zur Einagbe</Button>
+    </div>
+
+    <div class="card einladung card6">
+        <h2>Prima!</h2>
+        Du hast dich erfolgeich qualifiziert.<br><br>
+        Was bringt mir das jetzt?<br>
+        <Button onclick="goToCard(7)">► Belohnung</Button>
+    </div>
+
+    <div class="card einladung card7">
+        <h2>Einladung</h2>
+        Du bist herzlich zu meinem 11. Geburtstag eingeladen. <br>
+        <dl class="info-grid">
+            <dt>Wann?</dt>
+            <dd>19. April - 15ºº</dd>
+
+            <dt>Wo?</dt>
+            <dd>Rotkehlchenweg 16a<br>Geretsried</dd>
+
+            <dt>Was?</dt>
+            <dd>platzhalter</dd>
+
+            <dt>Kommst du?</dt>
+            <dd><a href="mailto:beier.melanie@web.de">E-Mail</a><br><a href="tel:+491622010311">Telefon</a></dd>
+        </dl>
+        <br>
+        
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
