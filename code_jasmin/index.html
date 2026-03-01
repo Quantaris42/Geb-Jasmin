@@ -58,13 +58,13 @@
         <button onclick="goToCard(5)">Deine letzte Hoffnung ►</button>
     </div>
 
-    <div class="card einladung card5">
+    <div class="card hoffnung card5">
         <h2>Deine letzte Hoffung ist...</h2>
         ... Jasmin<br>
         <Button onclick="goToCard(0)">◄ Zurück zur Einagbe</Button>
     </div>
 
-    <div class="card einladung card6">
+    <div class="card erfolg card6">
         <h2>Prima!</h2>
         Du hast dich erfolgeich qualifiziert.<br><br>
         Was bringt mir das jetzt?<br>
@@ -82,23 +82,23 @@
             <dd>Rotkehlchenweg 16a<br>Geretsried</dd>
 
             <dt>Was?</dt>
-            <dd><a href=""></a>[was]</dd>
+            <dd><a href="#" onclick="goToCard(8)">Programm</a></dd>
 
             <dt>Kommst du?</dt>
-            <dd><a href="mailto:beier.melanie@web.de">E-Mail</a><br><a href="tel:+491622010311">Telefon</a></dd>
+            <dd><a href="mailto:beier.melanie@web.de" style="text-decoration: none; font-size: 5vh;">📧</a>     
+                <a href="tel:+491622010311"  style="text-decoration: none; font-size: 5vh;">📞</a>      
+                <a href="https://wa.me/491622010311" style="text-decoration: none;"><img src="wa.png" alt="whatsapp" style="height: 5vh;"></a></dd>
         </dl>
-        <br>
-
-
+        <Button onclick="localStorage.setItem('solved', 'no'); goToCard(0)">◄ Zurück zur Einagbe</Button>
     </div>
 
     <div class="card programm card8">
-        <h2>Programm</h2>
+        <Button onclick="goToCard(7)" class="programmBtn">◄ Zurück zur<br>Einladung</Button>
     </div>
 
     <div class="card fehler card9">
         <h2 style="color: red;">Fehler</h2>
-        Das eingegebene Passwort ist falsch!<br>
+        Der eingegebene Code ist falsch!<br>
         <Button onclick="goToCard(0)">◄ Zurück zur Einagbe</Button>
     </div>
 

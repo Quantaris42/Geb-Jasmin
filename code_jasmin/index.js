@@ -7,7 +7,9 @@ inputField.addEventListener("keydown", function (event) {
     }
 });
 
-
+if (localStorage.getItem("solved") === "yes") {
+    goToCard(7);
+}
 
 async function checkPwd(userPwd) {
     var formData = new FormData();
@@ -22,8 +24,9 @@ async function checkPwd(userPwd) {
 
         if (result.trim() === "success") {
             goToCard(6);
+            localStorage.setItem("solved", "yes");
         } else {
-            goToCard(9);
+            goToCard(7);
         }
     } catch (error) {
         console.error("Server-Fehler: ", error);
