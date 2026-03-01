@@ -9,9 +9,28 @@ inputField.addEventListener("keydown", function (event) {
 
 
 
-function checkPwd(userPwd) {
-    goToCard(6);
+async function checkPwd(userPwd) {
+    var formData = new FormData();
+    formData.append('upwd', userPwd)
+
+    try {
+        response = await fetch('check.php', {
+            method: 'POST',
+            body: formData
+        });
+        result = await response.text();
+
+        if (result.trim() === "success") {
+            goToCard(6);
+        } else {
+            goToCard(9);
+        }
+    } catch (error) {
+        console.error("Server-Fehler: ", error);
+    }
 }
+
+
 
 function goToCard(cardId) {
     cards = document.getElementsByClassName("card");

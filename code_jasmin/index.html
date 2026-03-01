@@ -14,7 +14,7 @@
         <h2>Geburtstag Jasmin</h2>
         Gib den Code ein: <br>
         <input type="text" id="codeBox">
-        <button onclick="checkPwd()">Check</button>
+        <button onclick="checkPwd(document.getElementById('codeBox').value)">Check</button>
         <br><br>
         Die magischen Verbindungen erschließen sich dir nicht?<br>
         <Button onclick="goToCard(1)">1. Hinweis ►</Button>
@@ -82,14 +82,24 @@
             <dd>Rotkehlchenweg 16a<br>Geretsried</dd>
 
             <dt>Was?</dt>
-            <dd>platzhalter</dd>
+            <dd><a href=""></a>[was]</dd>
 
             <dt>Kommst du?</dt>
             <dd><a href="mailto:beier.melanie@web.de">E-Mail</a><br><a href="tel:+491622010311">Telefon</a></dd>
         </dl>
         <br>
-        
-        
+
+
+    </div>
+
+    <div class="card programm card8">
+        <h2>Programm</h2>
+    </div>
+
+    <div class="card fehler card9">
+        <h2 style="color: red;">Fehler</h2>
+        Das eingegebene Passwort ist falsch!<br>
+        <Button onclick="goToCard(0)">◄ Zurück zur Einagbe</Button>
     </div>
 
     <script src="index.js"></script>

@@ -34,14 +34,12 @@ h2 {
     max-width: 400px;
 
     text-align: center;
+
+    display: none;
 }
 
-.hinweis1,
-.hinweis2,
-.hinweis3,
-.hinweis4,
-.einladung {
-    display: none;
+.index{
+    display: block;
 }
 
 input {
@@ -109,4 +107,8 @@ dd {
     margin-left: 10px;
     grid-column: 2;
     text-align: left;
+}
+
+@media only screen and (max-width: 480px) {
+    
 }
