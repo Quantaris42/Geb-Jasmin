@@ -26,7 +26,7 @@ async function checkPwd(userPwd) {
             goToCard(6);
             localStorage.setItem("solved", "yes");
         } else {
-            goToCard(7);
+            goToCard(9);
         }
     } catch (error) {
         console.error("Server-Fehler: ", error);
