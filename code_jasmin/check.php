@@ -1,5 +1,5 @@
 <?php
-$input = $_POST['pswd'] ?? '';
+$input = $_POST['upwd'] ?? '';
 $correctPassword = "2598";
 
 if ($input === $correctPassword) {
