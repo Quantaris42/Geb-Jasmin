@@ -12,20 +12,28 @@ if (localStorage.getItem("solved") === "yes") {
 }
 
 async function checkPwd(userPwd) {
-    var formData = new FormData();
+    const formData = new FormData();
     formData.append('upwd', userPwd)
 
     try {
-        response = await fetch('check.php', {
+        const response = await fetch('check.php', {
             method: 'POST',
             body: formData
         });
-        result = await response.text();
+
+        if (!response.ok) {
+            console.error('HTTP Error ${response.status} - ${response.statusText}');
+            return;
+        }
+
+        const result = await response.text();
+        console.log(result);
 
         if (result.trim() === "success") {
             goToCard(6);
             localStorage.setItem("solved", "yes");
         } else {
+            console.warn("Pwd falsch")
             goToCard(9);
         }
     } catch (error) {
